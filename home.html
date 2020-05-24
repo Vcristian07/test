@@ -1,0 +1,120 @@
+<html>
+  <head>
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <style>
+      .form-group {
+        margin-left: 20px;
+      }
+      #wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+        grid-auto-rows: minmax(100px, auto);
+        justify-items: stretch;
+      }
+      #wrapper > div {
+        background: #ee2;
+        padding: 1em;
+      }
+      .test {
+        grid-column: 1/2;
+        grid-row: 1/4;
+      }
+      #wrapper > div:nth-child(odd) {
+        background: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-2">Hello1</div>
+        <div class="col-3">Hello2</div>
+        <div class="col-7">Hello3</div>
+      </div>
+    </div>
+    <div>
+      <div class="form-group">
+        <form class="form">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" />
+          </div>
+          <div>
+            <label for="name">Age</label>
+            <input id="age" name="age" type="text" />
+          </div>
+          <div>
+            <label for="name">Cnp</label>
+            <input id="cnp" name="cnp" type="text" />
+          </div>
+          <input type="submit" />
+        </form>
+      </div>
+    </div>
+    <div>
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Cnp</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="here"></tbody>
+      </table>
+    </div>
+    <div id="wrapper">
+      <div class="test">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cumque
+        officiis in, ratione doloremque hic fuga nisi dolores consectetur
+        voluptatum aut eaque voluptas nesciunt accusamus et provident nam,
+        soluta dolorem corporis sit? Ratione fugiat vel amet totam nulla
+        recusandae ad unde praesentium eveniet dignissimos repellendus, optio
+        fugit sed explicabo esse sint perferendis quasi dolor! Quo, voluptates
+        nemo. Obcaecati voluptatibus cupiditate, beatae nulla eveniet corporis
+        ea consectetur similique mollitia ipsum. Autem iste voluptatum,
+        assumenda doloremque error iure alias unde temporibus consequuntur!
+      </div>
+      <div>textfdsfdsdfssd2</div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe alias
+        blanditiis laudantium consectetur. Deleniti iste consequatur sequi, qui
+        fugit quia ea. Ratione, saepe ab nisi dolorum voluptatibus fugit
+        doloribus ipsa eligendi neque.
+      </div>
+      <div>text4</div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cumque
+        officiis in, ratione doloremque hic fuga nisi dolores consectetur
+        voluptatum aut eaque voluptas nesciunt accusamus et provident nam,
+        soluta dolorem corporis sit? Ratione fugiat vel amet totam nulla
+        recusandae ad unde praesentium eveniet dignissimos repellendus, optio
+        fugit sed explicabo esse sint perferendis quasi dolor! Quo, voluptates
+        nemo. Obcaecati voluptatibus cupiditate, beatae nulla eveniet corporis
+        ea consectetur similique mollitia ipsum. Autem iste voluptatum,
+        assumenda doloremque error iure alias unde temporibus consequuntur!
+      </div>
+      <div>textfdsfdsdfssd2</div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe alias
+        blanditiis laudantium consectetur. Deleniti iste consequatur sequi, qui
+        fugit quia ea. Ratione, saepe ab nisi dolorum voluptatibus fugit
+        doloribus ipsa eligendi neque.
+      </div>
+      <div>text4</div>
+    </div>
+    <button id="s">Click me: 0</button>
+
+    <script src="./data.js"></script>
+  </body>
+</html>
+
+<!-- edit your html here -->
